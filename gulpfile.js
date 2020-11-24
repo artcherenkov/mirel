@@ -83,3 +83,8 @@ gulp.task("build", gulp.series(
 ));
 
 gulp.task("start", gulp.series("build", "server"));
+
+const ghPages = require('gh-pages');
+gulp.task('deploy', function() {
+  ghPages.publish('./build', {}, function(err) {});
+});
