@@ -10,25 +10,27 @@
   </head>
   <body>
     <header class="page-header">
-      <h1 class="page-header__header">Мирель</h1>
-      <a href="mailto:info@rtpr.ru">e-mail: info@rtpr.ru</a>
+      <div class="page-header__header-wrapper">
+        <h1 class="page-header__header">МикроРНК Диагностика</h1>
+        <a class="page-header__link" href="mailto:info@rtpr.ru">e-mail: info@rtpr.ru</a>
+      </div>
       <nav class="page-header__nav">
         <div class="page-header__nav-wrapper">
           <ul class="page-header__nav-list">
             <li class="page-header__nav-item">
-              <a href="#">Главная</a>
+              <a class="page-header__nav-link" href="#">О нас</a>
             </li>
             <li class="page-header__nav-item">
-              <a href="./about-company.html">О компании</a>
+              <a class="page-header__nav-link" href="#">Заболевания щитовидной железы</a>
             </li>
             <li class="page-header__nav-item">
-              <a href="#">Методика</a>
+              <a class="page-header__nav-link" href="#">Молекулярно-генетический анализ</a>
             </li>
             <li class="page-header__nav-item">
-              <a href="#">Алгоритм исследования</a>
+              <a class="page-header__nav-link" href="#">Публикации</a>
             </li>
             <li class="page-header__nav-item">
-              <a href="#">Научные работы</a>
+              <a class="page-header__nav-link" href="#">Информация для пациентов</a>
             </li>
           </ul>
         </div>
@@ -37,9 +39,11 @@
     <main class="page-main">
       <section class="promo">
         <div class="promo__bg-wrapper">
-          <p class="promo__bg-text">
-            Наша цель - повышение точности и информативности дооперационной диагностики
-          </p>
+          <div class="promo__bg-text-wrapper">
+            <p class="promo__bg-text">
+              Наша цель - повышение точности и информативности дооперационной диагностики
+            </p>
+          </div>
         </div>
         <div class="promo__content">
           <p class="promo__content-text">
@@ -55,19 +59,21 @@
       </section>
       <section class="results-allows">
         <div class="results-allows__wrapper">
-          <h2 class="results-allows__header">Результаты анализа позволяют:</h2>
+          <h2 class="results-allows__header">
+            Результаты анализа позволяют:
+          </h2>
           <ul class="results-allows__list">
-            <li class="results-allows__item">
+            <li class="results-allows__item results-allows__item--1">
               <p class="results-allows__item-content">
                 Сократить количество необоснованных диагностических удалений ЩЖ в случае доброкачественных образований.
               </p>
-              <span class="results-allows__item-num">1</span>
+              <span class="results-allows__item-num">1.</span>
             </li>
-            <li class="results-allows__item">
+            <li class="results-allows__item results-allows__item--2">
               <p class="results-allows__item-content">
                 Своевременно выявить злокачественные опухоли ЩЖ
               </p>
-              <span class="results-allows__item-num">2</span>
+              <span class="results-allows__item-num">2.</span>
             </li>
           </ul>
           <p class="results-allows__disclaimer">
@@ -111,7 +117,7 @@
         <div class="help__wrapper">
           <h2 class="help__header">Кому мы можем помочь?</h2>
           <div class="help__content">
-            <img src="./img/content-woman.png" width="277" height="370" alt="Женская шея">
+            <img class="help__content-image" src="./img/content-woman.png" width="277" height="370" alt="Женская шея">
             <ul class="help__list">
               <li class="help__item">
                 <h3 class="help__item-header">
@@ -146,36 +152,38 @@
             <label class="question__label" for="email">Ваша почта</label>
             <input class="question__input" type="email" name="email" id="email">
           </div>
-          <div class="question__input-wrapper">
+          <div class="question__input-wrapper question__input-wrapper--textarea">
             <label class="question__label" for="question">Напишите здесь, чтобы вы хотели спросить у нас</label>
-            <textarea class="question__input" name="question" id="question"></textarea>
+            <textarea class="question__input question__input--textarea" name="question" id="question"></textarea>
           </div>
           <button class="question__form-submit">Отправить</button>
         </form>
       </section>
     </main>
     <footer class="page-footer">
-      <div class="page-footer__company-wrapper">
-        <h2 class="page-footer__company">Мирель</h2>
-        <a class="page-footer__email" href="mailto:info@rtpr.ru">e-mail: info@rtpr.ru</a>
+      <div class="page-footer__wrapper">
+        <div class="page-footer__company-wrapper">
+          <h2 class="page-footer__company">МикроРНК Диагностика</h2>
+          <a class="page-footer__email" href="mailto:info@rtpr.ru">e-mail: info@rtpr.ru</a>
+        </div>
+        <ul class="page-footer__links-list">
+          <li class="page-footer__links-item">
+            <a href="#" class="page-footer__link">Главная</a>
+          </li>
+          <li class="page-footer__links-item">
+            <a href="#" class="page-footer__link">О компании</a>
+          </li>
+          <li class="page-footer__links-item">
+            <a href="#" class="page-footer__link">Методика</a>
+          </li>
+          <li class="page-footer__links-item">
+            <a href="#" class="page-footer__link">Алгоритм исследования</a>
+          </li>
+          <li class="page-footer__links-item">
+            <a href="#" class="page-footer__link">Научные работы</a>
+          </li>
+        </ul>
       </div>
-      <ul class="page-footer__links-list">
-        <li class="page-footer__links-item">
-          <a href="#" class="page-footer__link">Главная</a>
-        </li>
-        <li class="page-footer__links-item">
-          <a href="#" class="page-footer__link">О компании</a>
-        </li>
-        <li class="page-footer__links-item">
-          <a href="#" class="page-footer__link">Методика</a>
-        </li>
-        <li class="page-footer__links-item">
-          <a href="#" class="page-footer__link">Алгоритм исследования</a>
-        </li>
-        <li class="page-footer__links-item">
-          <a href="#" class="page-footer__link">Научные работы</a>
-        </li>
-      </ul>
     </footer>
   </body>
 </html>

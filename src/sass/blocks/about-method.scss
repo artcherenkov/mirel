@@ -1,0 +1,27 @@
+.about-method {
+  max-width: 1260px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.about-method__header {
+  font-size: 38px;
+  line-height: 52px;
+  text-align: center;
+  font-weight: normal;
+
+  color: #0067b1;
+}
+
+.about-method__content {
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  margin: 0 0 60px;
+
+  color: #6D6E70;
+
+  &:not(:last-of-type) {
+    margin-bottom: 28px;
+  }
+}

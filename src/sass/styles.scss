@@ -1,5 +1,12 @@
 @import "normalize";
 
 @import "global/scaffolding";
+@import "global/fonts";
 
-@import "blocks/hello-world";
+@import "blocks/page-header";
+@import "blocks/promo";
+@import "blocks/results-allows";
+@import "blocks/about-method";
+@import "blocks/help";
+@import "blocks/question";
+@import "blocks/page-footer";

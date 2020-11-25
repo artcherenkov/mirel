@@ -197,7 +197,8 @@ html {
 
 body {
   margin: 0;
-  min-width: 320px; }
+  min-width: 320px;
+  font-family: "Open Sans", "Tahoma", sans-serif; }
 
 .visually-hidden:not(:focus):not(:active),
 input[type="radio"].visually-hidden,
@@ -214,8 +215,368 @@ input[type="checkbox"].visually-hidden {
   clip: rect(0 0 0 0);
   overflow: hidden; }
 
-.hello-world {
-  display: block; }
+@font-face {
+  font-weight: normal;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/opensans-regular.woff2") format("woff2"), url("../fonts/opensans-regular.woff") format("woff"); }
 
-h1 {
-  color: green; }
+@font-face {
+  font-weight: 600;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/opensans-semibold.woff2") format("woff2"), url("../fonts/opensans-semibold.woff") format("woff"); }
+
+@font-face {
+  font-weight: 700;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/opensans-bold.woff2") format("woff2"), url("../fonts/opensans-bold.woff") format("woff"); }
+
+@font-face {
+  font-weight: 400;
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/ubuntu-regular.woff2") format("woff2"), url("../fonts/ubuntu-regular.woff") format("woff"); }
+
+.page-header__header {
+  font-family: "Ubuntu", "Tahoma", sans-serif;
+  font-size: 24px;
+  line-height: 28px; }
+
+.page-header__link {
+  color: black;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 19px; }
+
+.page-header__header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1260px;
+  padding: 0 10px;
+  margin: 0 auto; }
+
+.page-header__nav {
+  background-color: #00B5F0; }
+
+.page-header__nav-list {
+  margin: 0 auto;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1260px;
+  padding: 0 10px;
+  flex-wrap: wrap; }
+
+.page-header__nav-item:not(:last-of-type) {
+  margin-right: 10px; }
+
+.page-header__nav-link {
+  display: block;
+  padding: 19px 0;
+  color: white;
+  text-decoration: none; }
+
+.promo__bg-wrapper {
+  background: url("../img/bg-dna.png");
+  background-size: cover; }
+
+.promo__bg-text-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  max-width: 1260px;
+  margin: 0 auto; }
+
+.promo__bg-text {
+  font-size: 30px;
+  line-height: 41px;
+  text-align: center;
+  width: 440px;
+  padding: 150px 0 215px;
+  margin: 0 150px 0 0;
+  font-weight: normal;
+  color: #ffffff; }
+
+.promo__content {
+  max-width: 1260px;
+  margin: 82px auto;
+  padding: 0 10px;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  color: #6d6e70; }
+
+.promo__content-text {
+  margin: 0; }
+  .promo__content-text:not(:last-of-type) {
+    margin-bottom: 28px; }
+
+.results-allows {
+  background: #e5f5fd; }
+
+.results-allows__wrapper {
+  max-width: 1260px;
+  margin: 0 auto;
+  padding: 0 10px;
+  padding-top: 38px; }
+
+.results-allows__header {
+  font-weight: 600;
+  font-size: 38px;
+  line-height: 52px;
+  text-align: center;
+  margin: 0 0 50px;
+  color: #0067b1; }
+
+.results-allows__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center; }
+
+.results-allows__item {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: center; }
+  .results-allows__item--1 {
+    max-width: 368px; }
+  .results-allows__item--2 {
+    max-width: 275px; }
+  .results-allows__item:not(:last-of-type) {
+    margin-right: 55px; }
+
+.results-allows__item-content {
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  margin: 40px 0 0;
+  color: #6d6e70; }
+
+.results-allows__item-num {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 100px;
+  text-align: center;
+  display: block;
+  width: 100px;
+  height: 100px;
+  border: 1px solid #0067B1;
+  color: #0067B1;
+  position: relative; }
+  .results-allows__item-num::after {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border: 1px solid #0067B1;
+    transform: rotate(15deg);
+    left: 0; }
+
+.results-allows__disclaimer {
+  text-align: center;
+  font-size: 18px;
+  line-height: 25px;
+  margin: 65px 0 50px;
+  color: #6d6e70; }
+
+.result-allows__method {
+  background: url("../img/bg-sur.png");
+  background-size: cover; }
+
+.result-allows__method-wrapper {
+  background: rgba(0, 0, 0, 0.55);
+  padding: 80px 0; }
+
+.result-allows__method-content {
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  margin: 0 auto;
+  max-width: 1260px;
+  padding: 0 10px;
+  color: #ffffff; }
+  .result-allows__method-content:not(:last-of-type) {
+    margin-bottom: 28px; }
+
+.about-method {
+  max-width: 1260px;
+  padding: 0 10px;
+  margin: 0 auto; }
+
+.about-method__header {
+  font-size: 38px;
+  line-height: 52px;
+  text-align: center;
+  font-weight: normal;
+  color: #0067b1; }
+
+.about-method__content {
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  margin: 0 0 60px;
+  color: #6D6E70; }
+  .about-method__content:not(:last-of-type) {
+    margin-bottom: 28px; }
+
+.help {
+  background: #e5f5fd; }
+
+.help__wrapper {
+  max-width: 1260px;
+  margin: 0 auto;
+  padding: 0 10px;
+  padding-top: 30px; }
+
+.help__header {
+  margin: 0 0 30px;
+  font-weight: 600;
+  font-size: 38px;
+  line-height: 52px;
+  text-align: center;
+  color: #0067B1; }
+
+.help__content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-bottom: 42px; }
+
+.help__content-image {
+  margin-left: auto;
+  margin-right: auto; }
+
+.help__list {
+  margin: auto 0;
+  padding: 0;
+  list-style: none; }
+
+.help__item:not(:last-of-type) {
+  margin-bottom: 68px; }
+
+.help__item-header {
+  font-size: 20px;
+  line-height: 27px;
+  font-weight: normal;
+  margin: 0 0 15px;
+  color: #0067B1; }
+
+.help__item-content {
+  font-size: 18px;
+  line-height: 25px;
+  margin: 0;
+  color: #6D6E70; }
+
+.question {
+  max-width: 1260px;
+  margin: 0 auto;
+  padding: 0 10px;
+  padding-top: 82px; }
+
+.question__header {
+  font-weight: normal;
+  font-size: 38px;
+  line-height: 52px;
+  margin: 0;
+  text-align: center;
+  color: #00B5F0; }
+
+.question__form {
+  max-width: 520px;
+  margin: 40px auto 0;
+  margin-bottom: 55px;
+  display: grid;
+  grid-template-rows: 66px 66px 190px;
+  grid-row-gap: 8px; }
+
+.question__input-wrapper {
+  display: flex;
+  flex-direction: column; }
+  .question__input-wrapper--textarea {
+    margin-top: 18px; }
+
+.question__label {
+  font-size: 15px;
+  line-height: 20px;
+  margin-bottom: 4px;
+  color: #0067b1; }
+
+.question__input {
+  margin: 0;
+  padding: 0 5px;
+  height: 100%;
+  border: 1px solid #d1d2d4; }
+  .question__input--textarea {
+    resize: none; }
+
+.question__form-submit {
+  margin: 20px auto 0;
+  padding: 9px 0;
+  border: none;
+  background: #0067b1;
+  width: 200px;
+  font-size: 15px;
+  line-height: 20px;
+  text-align: center;
+  color: #FFFFFF; }
+
+.page-footer {
+  position: relative; }
+  .page-footer::after {
+    content: "";
+    width: 100%;
+    height: 11px;
+    background-color: #00b5f0;
+    position: absolute;
+    top: 0; }
+
+.page-footer__wrapper {
+  max-width: 1260px;
+  margin: 0 auto;
+  padding: 0 10px;
+  display: grid;
+  grid-template-columns: 320px 600px;
+  margin-bottom: 55px;
+  padding-top: 46px;
+  position: relative; }
+
+.page-footer__company-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+
+.page-footer__email {
+  font-size: 14px;
+  line-height: 19px;
+  text-decoration: none;
+  color: #000000; }
+
+.page-footer__company {
+  font-family: "Ubuntu", "Tahoma", sans-serif;
+  font-size: 24px;
+  line-height: 28px;
+  margin: 0;
+  color: #000000; }
+
+.page-footer__links-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center; }
+
+.page-footer__links-item:not(:last-of-type) {
+  margin-bottom: 10px; }
+
+.page-footer__link {
+  font-size: 14px;
+  line-height: 19px;
+  text-decoration: none;
+  color: #6D6E70; }

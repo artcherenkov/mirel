@@ -1,0 +1,41 @@
+.promo__bg-wrapper {
+  background: url("../img/bg-dna.png");
+  background-size: cover;
+}
+
+.promo__bg-text-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  max-width: 1260px;
+  margin: 0 auto;
+}
+
+.promo__bg-text {
+  font-size: 30px;
+  line-height: 41px;
+  text-align: center;
+  width: 440px;
+  padding: 150px 0 215px;
+  margin: 0 150px 0 0;
+  font-weight: normal;
+  color: #ffffff;
+}
+
+.promo__content {
+  max-width: 1260px;
+  margin: 82px auto;
+  padding: 0 10px;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+
+  color: #6d6e70;
+}
+
+.promo__content-text {
+  margin: 0;
+
+  &:not(:last-of-type) {
+    margin-bottom: 28px;
+  }
+}
