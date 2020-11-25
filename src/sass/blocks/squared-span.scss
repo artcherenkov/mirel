@@ -1,0 +1,22 @@
+.squared-span {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 100px;
+  text-align: center;
+  display: block;
+  width: 100px;
+  height: 100px;
+  border: 1px solid #0067B1;
+  color: #0067B1;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border: 1px solid #0067B1;
+    transform: rotate(15deg);
+    left: 0;
+  }
+}

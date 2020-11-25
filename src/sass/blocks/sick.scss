@@ -1,0 +1,62 @@
+.sick {
+  width: 1260px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.sick__intro {
+  max-width: 1100px;
+  text-align: center;
+  color: #6D6E70;
+  margin: 0 auto 82px;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.sick__intro-content {
+  margin: 0;
+
+  &:not(:last-of-type) {
+    margin-bottom: 28px;
+  }
+}
+
+.sick__header {
+  font-weight: normal;
+  font-size: 38px;
+  line-height: 52px;
+  text-align: center;
+  margin: 0 0 28px;
+
+  color: #0067B1;
+}
+
+.sick__content {
+  margin: 0 0 54px;
+  font-size: 18px;
+  line-height: 25px;
+
+  color: #6D6E70;
+
+
+  & strong {
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 30px;
+
+    color: #00B5F0;
+  }
+
+  &:not(:last-of-type):not(&--min-margin) {
+    margin-bottom: 60px;
+  }
+
+  &--no-header {
+    margin: 0;
+  }
+
+  &--min-margin {
+    margin-bottom: 20px;
+  }
+}

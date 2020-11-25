@@ -246,7 +246,8 @@ input[type="checkbox"].visually-hidden {
 .page-header__header {
   font-family: "Ubuntu", "Tahoma", sans-serif;
   font-size: 24px;
-  line-height: 28px; }
+  line-height: 28px;
+  margin: 28px 0; }
 
 .page-header__link {
   color: black;
@@ -283,6 +284,13 @@ input[type="checkbox"].visually-hidden {
   color: white;
   text-decoration: none; }
 
+.page-header__bg {
+  margin-top: 8px;
+  margin-bottom: 82px;
+  height: 239px;
+  background: url("../img/bg-dna.png") no-repeat;
+  background-size: cover; }
+
 .promo__bg-wrapper {
   background: url("../img/bg-dna.png");
   background-size: cover; }
@@ -316,6 +324,26 @@ input[type="checkbox"].visually-hidden {
   margin: 0; }
   .promo__content-text:not(:last-of-type) {
     margin-bottom: 28px; }
+
+.squared-span {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 100px;
+  text-align: center;
+  display: block;
+  width: 100px;
+  height: 100px;
+  border: 1px solid #0067B1;
+  color: #0067B1;
+  position: relative; }
+  .squared-span::after {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border: 1px solid #0067B1;
+    transform: rotate(15deg);
+    left: 0; }
 
 .results-allows {
   background: #e5f5fd; }
@@ -360,26 +388,6 @@ input[type="checkbox"].visually-hidden {
   text-align: center;
   margin: 40px 0 0;
   color: #6d6e70; }
-
-.results-allows__item-num {
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 100px;
-  text-align: center;
-  display: block;
-  width: 100px;
-  height: 100px;
-  border: 1px solid #0067B1;
-  color: #0067B1;
-  position: relative; }
-  .results-allows__item-num::after {
-    content: "";
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    border: 1px solid #0067B1;
-    transform: rotate(15deg);
-    left: 0; }
 
 .results-allows__disclaimer {
   text-align: center;
@@ -438,7 +446,7 @@ input[type="checkbox"].visually-hidden {
   padding-top: 30px; }
 
 .help__header {
-  margin: 0 0 30px;
+  margin: 0 0 69px;
   font-weight: 600;
   font-size: 38px;
   line-height: 52px;
@@ -448,7 +456,7 @@ input[type="checkbox"].visually-hidden {
 .help__content {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding-bottom: 42px; }
+  padding-bottom: 92px; }
 
 .help__content-image {
   margin-left: auto;
@@ -474,6 +482,189 @@ input[type="checkbox"].visually-hidden {
   line-height: 25px;
   margin: 0;
   color: #6D6E70; }
+
+.choice {
+  max-width: 1260px;
+  margin: 0 auto;
+  padding: 0 10px; }
+
+.choice__intro {
+  margin: 50px 0 20px;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  color: #6D6E70; }
+
+.choice__header {
+  margin: 0;
+  margin-bottom: 70px;
+  font-weight: 600;
+  font-size: 38px;
+  line-height: 52px;
+  text-align: center;
+  color: #0067B1; }
+
+.choice__list-wrapper {
+  display: flex;
+  justify-content: center; }
+
+.choice__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, 330px);
+  grid-column-gap: 50px; }
+
+.choice__item {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: center;
+  font-size: 18px;
+  line-height: 25px;
+  color: #6D6E70; }
+
+.choice__item-content {
+  margin: 40px 0 0; }
+
+.choice__comment {
+  margin: 0;
+  margin-top: 82px;
+  margin-bottom: 50px;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  color: #6D6E70; }
+
+.conclusion {
+  max-width: 1260px;
+  margin: 0 auto;
+  padding: 0 10px; }
+
+.conclusion__header {
+  font-weight: normal;
+  font-size: 38px;
+  line-height: 52px;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 28px;
+  color: #00b5f0; }
+
+.conclusion__list {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.conclusion__item {
+  display: flex;
+  align-items: baseline;
+  font-size: 18px;
+  line-height: 25px;
+  color: #6D6E70; }
+  .conclusion__item::before {
+    content: "";
+    min-width: 9px;
+    min-height: 9px;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background-color: #0067B1;
+    margin-right: 12px; }
+  .conclusion__item:not(:last-of-type) {
+    margin-bottom: 30px; }
+
+.conclusion__our-goal {
+  font-weight: 600;
+  font-size: 38px;
+  line-height: 52px;
+  text-align: center;
+  margin: 82px 0 0;
+  color: #0067B1; }
+
+.diagnostics {
+  background-color: #E5F5FD; }
+
+.diagnostics__wrapper {
+  max-width: 1260px;
+  margin: 0 auto;
+  padding: 28px 10px 57px; }
+
+.diagnostics__header {
+  font-weight: normal;
+  font-size: 38px;
+  line-height: 52px;
+  margin: 0 0 50px;
+  text-align: center;
+  color: #0067B1; }
+
+.diagnostics__list {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.diagnostics__item {
+  display: flex;
+  align-items: baseline;
+  font-size: 20px;
+  line-height: 27px;
+  color: #6D6E70; }
+  .diagnostics__item::before {
+    content: "";
+    min-width: 9px;
+    min-height: 9px;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background-color: #0067B1;
+    margin-right: 12px; }
+  .diagnostics__item:not(:last-of-type) {
+    margin-bottom: 30px; }
+
+.sick {
+  width: 1260px;
+  margin: 0 auto;
+  padding: 0 10px; }
+
+.sick__intro {
+  max-width: 1100px;
+  text-align: center;
+  color: #6D6E70;
+  margin: 0 auto 82px;
+  font-size: 18px;
+  line-height: 25px; }
+
+.sick__intro-content {
+  margin: 0; }
+  .sick__intro-content:not(:last-of-type) {
+    margin-bottom: 28px; }
+
+.sick__header {
+  font-weight: normal;
+  font-size: 38px;
+  line-height: 52px;
+  text-align: center;
+  margin: 0 0 28px;
+  color: #0067B1; }
+
+.sick__content {
+  margin: 0 0 54px;
+  font-size: 18px;
+  line-height: 25px;
+  color: #6D6E70; }
+  .sick__content strong {
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 30px;
+    color: #00B5F0; }
+  .sick__content:not(:last-of-type):not(.sick__content--min-margin) {
+    margin-bottom: 60px; }
+  .sick__content--no-header {
+    margin: 0; }
+  .sick__content--min-margin {
+    margin-bottom: 20px; }
 
 .question {
   max-width: 1260px;

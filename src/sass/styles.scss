@@ -5,8 +5,15 @@
 
 @import "blocks/page-header";
 @import "blocks/promo";
+@import "blocks/squared-span";
 @import "blocks/results-allows";
 @import "blocks/about-method";
 @import "blocks/help";
+
+@import "blocks/choice.scss";
+@import "blocks/conclusion.scss";
+@import "blocks/diagnostics.scss";
+@import "blocks/sick.scss";
+
 @import "blocks/question";
 @import "blocks/page-footer";
