@@ -345,6 +345,24 @@ input[type="checkbox"].visually-hidden {
     transform: rotate(15deg);
     left: 0; }
 
+.blue-dot {
+  display: flex;
+  align-items: baseline;
+  font-size: 20px;
+  line-height: 27px;
+  color: #6D6E70; }
+  .blue-dot::before {
+    content: "";
+    min-width: 9px;
+    min-height: 9px;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background-color: #0067B1;
+    margin-right: 12px; }
+  .blue-dot:not(:last-of-type) {
+    margin-bottom: 30px; }
+
 .results-allows {
   background: #e5f5fd; }
 
@@ -604,24 +622,6 @@ input[type="checkbox"].visually-hidden {
   padding: 0;
   list-style: none; }
 
-.diagnostics__item {
-  display: flex;
-  align-items: baseline;
-  font-size: 20px;
-  line-height: 27px;
-  color: #6D6E70; }
-  .diagnostics__item::before {
-    content: "";
-    min-width: 9px;
-    min-height: 9px;
-    width: 9px;
-    height: 9px;
-    border-radius: 50%;
-    background-color: #0067B1;
-    margin-right: 12px; }
-  .diagnostics__item:not(:last-of-type) {
-    margin-bottom: 30px; }
-
 .sick {
   width: 1260px;
   margin: 0 auto;
@@ -856,6 +856,110 @@ input[type="checkbox"].visually-hidden {
 
 .method__part--blue {
   background-color: #E5F5FD; }
+
+.algorithm__header,
+.algorithm__part {
+  max-width: 1260px;
+  margin: 0 auto;
+  padding: 0 10px; }
+
+.algorithm__part-1 {
+  margin-bottom: 82px; }
+
+.algorithm__part-2 {
+  margin-top: 93px;
+  margin-bottom: 37px; }
+
+.algorithm__header {
+  font-weight: normal;
+  font-size: 38px;
+  line-height: 52px;
+  margin-bottom: 57px;
+  text-align: center;
+  color: #0067B1; }
+
+.algorithm__list {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.algorithm__item {
+  display: flex;
+  align-items: baseline;
+  font-size: 18px;
+  line-height: 25px;
+  color: #6D6E70; }
+  .algorithm__item:not(:last-of-type) {
+    margin-bottom: 70px; }
+
+.algorithm__item-num {
+  min-width: 67px;
+  width: 67px;
+  min-height: 67px;
+  height: 67px;
+  line-height: 67px;
+  font-size: 24px;
+  margin-right: 19px; }
+  .algorithm__item-num::after {
+    min-width: 67px;
+    min-height: 67px;
+    width: 67px;
+    height: 67px; }
+
+.algorithm__item-content {
+  margin: 0; }
+  .algorithm__item-content:not(:last-of-type) {
+    margin-bottom: 28px; }
+
+.algorithm__grey-zone {
+  background: #E5F5FD; }
+
+.algorithm__grey-zone-wrapper {
+  max-width: 1260px;
+  margin: 0 auto;
+  padding: 32px 10px 92px; }
+
+.algorithm__grey-zone-header {
+  font-weight: bold;
+  font-size: 24px;
+  color: #00B5F0;
+  text-align: center;
+  margin: 0 0 28px; }
+
+.algorithm__grey-zone-content {
+  font-size: 18px;
+  line-height: 25px;
+  margin: 0;
+  color: #6D6E70; }
+  .algorithm__grey-zone-content:not(:last-of-type) {
+    margin-bottom: 28px; }
+
+.algorithm__grey-zone-point {
+  margin: 82px 0 0;
+  font-weight: bold;
+  font-size: 24px;
+  text-align: center;
+  color: #0067B1; }
+
+.algorithm__risks-header {
+  font-weight: bold;
+  font-size: 24px;
+  text-align: center;
+  color: #00B5F0;
+  margin-bottom: 66px; }
+
+.algorithm__risks-list {
+  margin: 0;
+  margin-left: 69px;
+  padding: 0;
+  list-style: none; }
+
+.algorithm__risks-item {
+  font-size: 18px;
+  line-height: 25px;
+  color: #6D6E70; }
+  .algorithm__risks-item:not(:last-of-type) {
+    margin-bottom: 32px; }
 
 .question {
   max-width: 1260px;

@@ -23,26 +23,3 @@
   padding: 0;
   list-style: none;
 }
-
-.diagnostics__item {
-  display: flex;
-  align-items: baseline;
-  font-size: 20px;
-  line-height: 27px;
-  color: #6D6E70;
-
-  &::before {
-    content: "";
-    min-width: 9px;
-    min-height: 9px;
-    width: 9px;
-    height: 9px;
-    border-radius: 50%;
-    background-color: #0067B1;
-    margin-right: 12px;
-  }
-
-  &:not(:last-of-type) {
-    margin-bottom: 30px;
-  }
-}
