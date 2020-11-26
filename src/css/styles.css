@@ -908,6 +908,8 @@ input[type="checkbox"].visually-hidden {
 
 .algorithm__item-content {
   margin: 0; }
+  .algorithm__item-content span {
+    color: #0067B1; }
   .algorithm__item-content:not(:last-of-type) {
     margin-bottom: 28px; }
 
@@ -931,6 +933,9 @@ input[type="checkbox"].visually-hidden {
   line-height: 25px;
   margin: 0;
   color: #6D6E70; }
+  .algorithm__grey-zone-content span {
+    font-size: 20px;
+    color: #0067B1; }
   .algorithm__grey-zone-content:not(:last-of-type) {
     margin-bottom: 28px; }
 

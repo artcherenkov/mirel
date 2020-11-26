@@ -62,6 +62,10 @@
 .algorithm__item-content {
   margin: 0;
 
+  & span {
+    color: #0067B1;
+  }
+
   &:not(:last-of-type) {
     margin-bottom: 28px;
   }
@@ -90,6 +94,11 @@
   line-height: 25px;
   margin: 0;
   color: #6D6E70;
+
+  & span {
+    font-size: 20px;
+    color: #0067B1;
+  }
 
   &:not(:last-of-type) {
     margin-bottom: 28px;
