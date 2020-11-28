@@ -246,19 +246,19 @@ input[type="checkbox"].visually-hidden {
 .squared-span {
   font-weight: bold;
   font-size: 36px;
-  line-height: 100px;
   text-align: center;
   display: block;
   width: 100px;
   height: 100px;
+  line-height: 100px;
   border: 1px solid #0067B1;
   color: #0067B1;
   position: relative; }
   .squared-span::after {
     content: "";
     position: absolute;
-    width: 100px;
-    height: 100px;
+    width: 100%;
+    height: 100%;
     border: 1px solid #0067B1;
     transform: rotate(15deg);
     left: 0; }
@@ -893,18 +893,16 @@ input[type="checkbox"].visually-hidden {
     margin-bottom: 70px; }
 
 .algorithm__item-num {
+  max-width: 67px;
+  max-height: 67px;
   min-width: 67px;
-  width: 67px;
   min-height: 67px;
-  height: 67px;
   line-height: 67px;
   font-size: 24px;
   margin-right: 19px; }
   .algorithm__item-num::after {
-    min-width: 67px;
-    min-height: 67px;
-    width: 67px;
-    height: 67px; }
+    width: 100%;
+    height: 100%; }
 
 .algorithm__item-content {
   margin: 0; }
@@ -1081,6 +1079,53 @@ input[type="checkbox"].visually-hidden {
   color: #0067B1; }
 
 .staff__description {
+  font-size: 18px;
+  line-height: 25px;
+  color: #6D6E70; }
+
+.studies {
+  max-width: 1260px;
+  margin: 0 auto;
+  padding: 0 10px; }
+
+.studies__header {
+  font-weight: normal;
+  font-size: 38px;
+  line-height: 52px;
+  text-align: center;
+  margin: 0 0 30px;
+  color: #0067B1; }
+
+.studies__description {
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  margin: 0 0 40px;
+  color: #6D6E70; }
+
+.studies__list {
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-auto-rows: auto;
+  grid-row-gap: 55px; }
+  .studies__list:not(:last-of-type) {
+    margin: 0 0 82px; }
+
+.studies__item {
+  display: grid;
+  grid-template-columns: 67px 1fr;
+  margin-left: 7px;
+  grid-column-gap: 20px; }
+
+.studies__item-num {
+  width: 67px;
+  height: 67px;
+  line-height: 67px;
+  font-size: 24px; }
+
+.studies__item-content {
+  margin: 0;
   font-size: 18px;
   line-height: 25px;
   color: #6D6E70; }

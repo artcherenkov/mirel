@@ -43,19 +43,19 @@
 }
 
 .algorithm__item-num {
+  max-width: 67px;
+  max-height: 67px;
   min-width: 67px;
-  width: 67px;
   min-height: 67px;
-  height: 67px;
+
   line-height: 67px;
+
   font-size: 24px;
   margin-right: 19px;
 
   &::after {
-    min-width: 67px;
-    min-height: 67px;
-    width: 67px;
-    height: 67px;
+    width: 100%;
+    height: 100%;
   }
 }
 

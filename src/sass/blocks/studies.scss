@@ -1,0 +1,57 @@
+.studies {
+  max-width: 1260px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.studies__header {
+  font-weight: normal;
+  font-size: 38px;
+  line-height: 52px;
+  text-align: center;
+  margin: 0 0 30px;
+
+  color: #0067B1;
+}
+
+.studies__description {
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  margin: 0 0 40px;
+  color: #6D6E70;
+}
+
+.studies__list {
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-auto-rows: auto;
+  grid-row-gap: 55px;
+
+  &:not(:last-of-type) {
+    margin: 0 0 82px;
+  }
+}
+
+.studies__item {
+  display: grid;
+  grid-template-columns: 67px 1fr;
+  margin-left: 7px;
+  grid-column-gap: 20px;
+}
+
+.studies__item-num {
+  width: 67px;
+  height: 67px;
+  line-height: 67px;
+  font-size: 24px;
+}
+
+.studies__item-content {
+  margin: 0;
+  font-size: 18px;
+  line-height: 25px;
+
+  color: #6D6E70;
+}
