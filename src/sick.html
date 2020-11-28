@@ -11,7 +11,11 @@
   <body>
     <header class="page-header">
       <div class="page-header__header-wrapper">
-        <h2 class="page-header__header">МикроРНК Диагностика</h2>
+        <h2 class="page-header__header">
+          <a href="index.html" class="page-header__header-link">
+            МикроРНК Диагностика
+          </a>
+        </h2>
         <a class="page-header__link" href="mailto:info@rtpr.ru">e-mail: info@rtpr.ru</a>
       </div>
       <nav class="page-header__nav">
@@ -21,7 +25,7 @@
               <a class="page-header__nav-link" href="index.html">Главная</a>
             </li>
             <li class="page-header__nav-item">
-              <a class="page-header__nav-link" href="sick.html">Заболевания щитовидной железы</a>
+              <a class="page-header__nav-link page-header__nav-link--active">Заболевания щитовидной железы</a>
             </li>
             <li class="page-header__nav-item">
               <a class="page-header__nav-link" href="about-us.html">О компании</a>
@@ -160,43 +164,71 @@
           <div class="question__input-wrapper">
             <label class="question__label" for="name">Имя</label>
             <input class="question__input" type="text" name="name" id="name">
+            <span class="question__invalid-input">Заполните, пожалуйста, поле.</span>
           </div>
           <div class="question__input-wrapper">
             <label class="question__label" for="email">Ваша почта</label>
             <input class="question__input" type="email" name="email" id="email">
+            <span class="question__invalid-input">Заполните, пожалуйста, поле.</span>
           </div>
           <div class="question__input-wrapper question__input-wrapper--textarea">
             <label class="question__label" for="question">Напишите здесь, чтобы вы хотели спросить у нас</label>
             <textarea class="question__input question__input--textarea" name="question" id="question"></textarea>
+            <span class="question__invalid-input">Заполните, пожалуйста, поле.</span>
           </div>
-          <button class="question__form-submit">Отправить</button>
+          <button class="question__form-submit button-submit">Отправить</button>
         </form>
       </section>
     </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper">
         <div class="page-footer__company-wrapper">
-          <h2 class="page-footer__company">МикроРНК Диагностика</h2>
-          <a class="page-footer__email" href="mailto:info@rtpr.ru">e-mail: info@rtpr.ru</a>
+          <h2 class="page-footer__company">
+            <a href="index.html" class="page-footer__company-link">
+              МикроРНК Диагностика
+            </a>
+          </h2>
+          <div class="page-footer__email-wrapper">
+            <a class="page-footer__email" href="mailto:info@rtpr.ru">e-mail: info@rtpr.ru</a>
+          </div>
         </div>
         <ul class="page-footer__links-list">
           <li class="page-footer__links-item">
-            <a href="#" class="page-footer__link">Главная</a>
+            <a class="page-footer__link" href="index.html">Главная</a>
           </li>
           <li class="page-footer__links-item">
-            <a href="#" class="page-footer__link">О компании</a>
+            <a class="page-footer__link page-footer__link--active">Заболевания щитовидной железы</a>
           </li>
           <li class="page-footer__links-item">
-            <a href="#" class="page-footer__link">Методика</a>
+            <a class="page-footer__link" href="about-us.html">О компании</a>
           </li>
           <li class="page-footer__links-item">
-            <a href="#" class="page-footer__link">Алгоритм исследования</a>
+            <a class="page-footer__link" href="method.html">Методика</a>
           </li>
           <li class="page-footer__links-item">
-            <a href="#" class="page-footer__link">Научные работы</a>
+            <a class="page-footer__link" href="algorithm.html">Алгоритм исследования</a>
+          </li>
+          <li class="page-footer__links-item">
+            <a class="page-footer__link" href="studies.html">Научные работы</a>
           </li>
         </ul>
       </div>
     </footer>
+    <article class="popup">
+      <div class="popup__wrapper">
+        <h3 class="popup__header">
+          Спасибо за ваш вопрос!
+        </h3>
+        <p class="popup__content">
+          Мы свяжемся с Вами по почте, указанной в форме.
+        </p>
+        <button class="popup__close-btn button-submit">
+          Закрыть
+        </button>
+      </div>
+    </article>
+
+    <script src="js/popup.js"></script>
+    <script src="js/form.js"></script>
   </body>
 </html>

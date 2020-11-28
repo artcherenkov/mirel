@@ -1,0 +1,20 @@
+.button-submit {
+  margin: 20px auto 0;
+  padding: 9px 0;
+  background: #0067b1;
+  width: 200px;
+  font-size: 15px;
+  line-height: 20px;
+  text-align: center;
+  border: 3px solid #0067b1;
+  color: #FFFFFF;
+
+  &:hover, &:focus {
+    background-color: #FFFFFF;
+    color: #0067b1;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}

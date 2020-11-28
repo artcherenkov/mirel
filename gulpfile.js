@@ -67,6 +67,7 @@ gulp.task("server", function () {
   });
 
   gulp.watch(paths.styles.dev, gulp.series("styles"));
+  gulp.watch("src/**/*.js", gulp.series("copy", "refresh"));
   gulp.watch("src/**/*.html", gulp.series("html", "refresh"));
 });
 
