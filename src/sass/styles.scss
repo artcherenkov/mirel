@@ -3,20 +3,22 @@
 @import "global/scaffolding";
 @import "global/fonts";
 
-@import "blocks/page-header";
-@import "blocks/promo";
 @import "blocks/squared-span";
 @import "blocks/blue-dot";
+
+@import "blocks/page-header";
+
+@import "blocks/promo";
 @import "blocks/results-allows";
 @import "blocks/about-method";
 @import "blocks/help";
-
 @import "blocks/choice.scss";
 @import "blocks/conclusion.scss";
 @import "blocks/diagnostics.scss";
 @import "blocks/sick.scss";
 @import "blocks/method";
 @import "blocks/algorithm";
-
 @import "blocks/question";
+@import "blocks/staff";
+
 @import "blocks/page-footer";

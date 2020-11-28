@@ -1,0 +1,79 @@
+.staff__about-us {
+  max-width: 1260px;
+  padding: 0 10px;
+  margin: 0 auto 70px;
+}
+
+.staff__about-us-header {
+  font-weight: normal;
+  font-size: 38px;
+  line-height: 52px;
+  text-align: center;
+  margin: 0 0 28px;
+  color: #0067b1;
+}
+
+.staff__about-us-content {
+  max-width: 1260px;
+  margin: 0 auto;
+  padding: 0 10px;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  color: #6D6E70;
+
+  &:not(:last-of-type) {
+    margin-bottom: 28px;
+  }
+}
+
+.staff__wrapper {
+  background-color: #e5f5fd;
+  padding-bottom: 49px;
+  padding-top: 36px;
+}
+
+.staff__header,
+.staff__list {
+  max-width: 1260px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.staff__header {
+  font-weight: normal;
+  font-size: 38px;
+  line-height: 52px;
+  text-align: center;
+  margin-bottom: 59px;
+
+  color: #0067B1;
+}
+
+.staff__list {
+  list-style: none;
+  display: grid;
+  grid-auto-rows: 323px;
+  grid-row-gap: 40px;
+}
+
+.staff__item {
+  display: grid;
+  grid-template-columns: 241px 1fr;
+  grid-column-gap: 47px;
+}
+
+.staff__name {
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 41px;
+  margin: 0 0 25px;
+  color: #0067B1;
+}
+
+.staff__description {
+  font-size: 18px;
+  line-height: 25px;
+
+  color: #6D6E70;
+}
