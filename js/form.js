@@ -1,5 +1,5 @@
 (function () {
-  const ENDPOINT = 'http://httpbin.org/post';
+  const ENDPOINT = 'https://httpbin.org/post';
   const INPUT_INVALID_CLASS = 'question__input--invalid';
 
   const ANIMATION_DURATION = 600; // мс
